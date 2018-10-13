@@ -43,6 +43,7 @@ const jsxLoader = {
     alias = {
         Assets: path.resolve(__dirname, 'assets'),
         UI: path.resolve(__dirname, 'src/UI'),
+        Stylesheets: path.resolve(__dirname, 'src/Stylesheets'),
     },
     extensions = ['.js', '.jsx', '.json', '.scss', '.css']
 
