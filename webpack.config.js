@@ -49,7 +49,7 @@ const jsxLoader = {
 
 module.exports = {
     mode,
-    entry: [path.join(__dirname, '/src/index.js')],
+    entry: ['babel-polyfill', path.join(__dirname, '/src/index.js')],
     output: {
         path: path.join(__dirname, 'build'),
         filename: '[name].[hash].js',
@@ -97,5 +97,8 @@ module.exports = {
     plugins,
     optimization: {
         minimizer: [new OptimizeCSSAssetsPlugin({})],
+    },
+    devServer: {
+        historyApiFallback: true,
     },
 }
