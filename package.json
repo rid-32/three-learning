@@ -42,6 +42,7 @@
     "dependencies": {
         "config": "^2.0.1",
         "react": "^16.5.2",
-        "react-dom": "^16.5.2"
+        "react-dom": "^16.5.2",
+        "three": "^0.98.0"
     }
 }
